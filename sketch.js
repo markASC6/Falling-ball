@@ -82,8 +82,8 @@ function draw(){
     g.count++
     if (g.count < 300 && g.rCount == 0){
         textSize(50)
-        text(`"R" to Restart`, 200, 50 );
-        text(`Space to Restart`, 200, 100 );
+        text(`Space to Switch Balls`, 200, 50 );
+        text(`"R" to Restart`, 200, 100 );
     }
 }
 
@@ -95,7 +95,6 @@ function keyPressed(){
         dot = [{}]
         g.dotCount = 0
         g.rCount++
-        console.log(dot)
     }
 }
 
@@ -127,9 +126,7 @@ function makeBall(){
 
 function mouseDragged(){
     makeBall();
-    console.log(dot)
 }
 function mouseClicked(){
     makeBall();
-    console.log(dot)
 }
